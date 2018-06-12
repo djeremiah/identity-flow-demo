@@ -1,0 +1,31 @@
+{
+  "id": "policyId",
+  "version": "v1",
+  "stages": [
+    {
+      "id": "stage 1",
+      "activities": [
+        {
+          "id": "activity1",
+          "name": "Prompt for image URL",
+          "uri": "direct:image-prompt"
+        }
+      ]
+    },
+    {
+      "id": "stage 2",
+      "activities": [
+        {
+          "id": "activity2",
+          "name": "Prompt for phone #",
+          "uri": "direct:phone-prompt"
+        },
+        {
+          "id": "activity3",
+          "name": "Prompt for SSN",
+          "uri": "direct:ssn-prompt"
+        }
+      ]
+    }
+  ]
+}

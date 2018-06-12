@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>rh.demo</groupId>
+    <artifactId>identity-flow-demo</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <fuse.version>7.0.0.fuse-000027-redhat-1</fuse.version>
+    </properties>
+
+
+    <modules>
+        <module>abstract-validation-service</module>
+        <module>API1</module>
+        <module>API2</module>
+        <module>API3</module>
+        <module>policy-service</module>
+    </modules>
+
+</project>

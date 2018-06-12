@@ -1,0 +1,10 @@
+package rh.demo;
+import rh.demo.SsnValidation;
+
+rule "The Social Security number is a nine-digit number in the format AAA-GG-SSSS"
+when
+    $validation: SsnValidation(ssn not matches "^\\d{3}[- ]?\\d{2}[- ]?\\d{4}$")
+then
+    $validation.setValid(Boolean.FALSE);
+    $validation.setError("SSN must be in the format ###[- ]##[- ]####");
+end
